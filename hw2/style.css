@@ -1,0 +1,97 @@
+.box_parent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  border: 2px;
+  width: 270px;
+  height: 100%;
+}
+
+.box2 {
+  border: 2px;
+  margin: 0 200px;
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+
+.box3 {
+  border: 2px solid;
+  width: 340px;
+}
+
+img {
+  border: 2px solid;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 35px;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+
+.heading {
+  margin-left: 15px;
+}
+
+.tabs {
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.tab-link {
+  text-decoration: none;
+}
+
+.source {
+  margin-left: 10px;
+}
+
+.title1 {
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+.highlight {
+  color: blue;
+}
+
+.paragraph {
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+.person-name {
+  text-align: center;
+  font-size: larger;
+}
+
+.section-header {
+  background-color: aqua;
+  text-align: center;
+  font-size: large;
+}
+
+
+.info-labels {
+  margin-left: 20px;
+  float: left;
+}
+
+.highlight-underline {
+  color: blue;
+  text-decoration: underline;
+}
