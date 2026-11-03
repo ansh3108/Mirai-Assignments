@@ -1,0 +1,325 @@
+body {
+  background: #0f0f0f;
+  color: #f1f1f1;
+}
+
+.top {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px 0 22px;
+  background: #0f0f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.left,
+.right,
+.search-area,
+.logo,
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  gap: 25px;
+}
+
+.menu {
+  font-size: 21px;
+  color: #eee;
+  cursor: pointer;
+}
+
+.logo {
+  gap: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.play {
+  background: #f00;
+  color: white;
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 5px 7px;
+}
+
+.search-area {
+  width: 48%;
+  max-width: 650px;
+  gap: 14px;
+  margin-left: 35px;
+}
+
+.search-box {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #303030;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #121212;
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  padding: 0 18px;
+  font-size: 16px;
+}
+
+.search-btn {
+  width: 66px;
+  height: 100%;
+  border: 0;
+  border-left: 1px solid #303030;
+  color: white;
+  background: #222;
+  font-size: 25px;
+}
+
+.mic,
+.bell {
+  border: 0;
+  color: white;
+  background: #222;
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  font-size: 17px;
+}
+
+.right {
+  gap: 22px;
+}
+
+.create {
+  color: white;
+  background: #222;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.bell {
+  background: transparent;
+  font-size: 23px;
+}
+
+.profile,
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  background: #7354a6;
+  font-size: 15px;
+}
+
+.side {
+  position: fixed;
+  left: 0;
+  top: 62px;
+  bottom: 0;
+  width: 230px;
+  overflow-y: auto;
+  padding: 12px 12px 25px;
+  background: #0f0f0f;
+}
+
+.side a {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  height: 42px;
+  padding: 0 12px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.side a span {
+  width: 20px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.side a:hover,
+.topics a:hover {
+  background: #272727;
+}
+
+.side .selected {
+  background: #272727;
+  font-weight: bold;
+}
+
+.side .side-title {
+  font-size: 16px;
+  font-weight: bold;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.side-title b {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.side h4 {
+  font-size: 16px;
+  margin: 18px 12px 8px;
+}
+
+.line {
+  height: 1px;
+  background: #303030;
+  margin: 13px 0;
+}
+
+.main {
+  margin-left: 230px;
+  padding: 75px 28px 30px;
+}
+
+.topics {
+  position: fixed;
+  top: 62px;
+  left: 230px;
+  right: 0;
+  z-index: 4;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 28px;
+  background: #0f0f0f;
+  white-space: nowrap;
+}
+
+.topics a {
+  background: #272727;
+  color: #eee;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 8px 13px;
+  font-size: 14px;
+}
+
+.topics .active {
+  background: #f1f1f1;
+  color: #111;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  row-gap: 38px;
+  padding-top: 10px;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  background: #272727;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumb span {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.details {
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+  position: relative;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.purple {
+  background: #7652a4;
+}
+.blue {
+  background: #356a9e;
+}
+.green {
+  background: #477b5c;
+}
+.pink {
+  background: #a74e75;
+}
+.orange {
+  background: #b26e37;
+}
+.red {
+  background: #9b3d3d;
+}
+.cyan {
+  background: #397d84;
+}
+.yellow {
+  background: #927d35;
+}
+
+.details h3 {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0 18px 6px 0;
+}
+
+.details p {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.dots {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 20px;
+  font-weight: normal;
+}
